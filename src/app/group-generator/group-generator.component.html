@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <div class="profile-bar-icon"><i class="fa fa-soccer-ball-o fa-2x" aria-hidden="true"></i> </div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">Random Groups Generation</li>
+    </ul>
+    <span class="form-line">    
+      <div class="btn-box">
+       
+      </div>
+    </span>
+  </nav>
+
+
+
+<div>
+    <h4>Write down the players list (each one separated with comma)</h4>
+    <textarea rows="5" cols="50" [(ngModel)]="playersnames"></textarea>
+    <button type="button" class="btn btn-outline-secondary me-2" style="margin-bottom: 35px;margin-left: 15px;" (click)="generate(playersnames)" title="Generate">Generate</button>
+    <div >
+      <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0lax">Group 1</th>
+            <th class="tg-0lax">Group 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">{{group1[0]}}</td>
+            <td class="tg-0lax">{{group2[0]}}</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">{{group1[1]}}</td>
+            <td class="tg-0lax">{{group2[1]}}</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">{{group1[2]}}</td>
+            <td class="tg-0lax">{{group2[2]}}</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">{{group1[3]}}</td>
+            <td class="tg-0lax">{{group2[3]}}</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">{{group1[4]}}</td>
+            <td class="tg-0lax">{{group2[4]}}</td>
+          </tr>
+        </tbody>
+        </table>
+  
+  
+      
+    </div>
+  </div>
