@@ -15,7 +15,9 @@ export class GroupGeneratorComponent {
 
 
   generate(playersnames: string) {
-    this.playersList = [] = [];
+    this.playersList = [];
+    this.group1 = [];
+    this.group2 = [];
     this.playersArray = playersnames.split(",");
 
     for (let index = 0; index < this.playersArray.length; index++) {
