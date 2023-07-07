@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <div class="profile-bar-icon"><i class="fa fa-soccer-ball-o fa-2x" aria-hidden="true"></i> </div>
+    <div class="profile-bar-icon"><fa-icon [icon]="faFutbol" style="margin-left:10px;margin-right:10px"></fa-icon> </div>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">Random Groups Generation</li>
     </ul>
@@ -13,6 +13,12 @@
 
 
 <div>
+    <div >
+    
+        <div class="alert alert-danger" style="margin-bottom:0" role="alert" *ngIf="control">
+            You need to enter 10 players name
+        </div>
+    </div>
     <h4>Write down the players list (each one separated with comma)</h4>
     <textarea rows="5" cols="50" [(ngModel)]="playersnames"></textarea>
     <button type="button" class="btn btn-outline-secondary me-2" style="margin-bottom: 35px;margin-left: 15px;" (click)="generate(playersnames)" title="Generate">Generate</button>
