@@ -1,19 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <div class="profile-bar-icon"><fa-icon [icon]="faFutbol" style="margin-left:10px;margin-right:10px"></fa-icon> </div>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">Random Groups Generation</li>
-    </ul>
+   
     <span class="form-line">    
       <div class="btn-box">
-       
+        <button type="button" class="btn btn-light" style="margin-left: 15px;" [routerLink]="['/groupgenerator']" title="group">Groups Generator</button>
+        <button type="button" class="btn btn-light" style="margin-left: 15px;" [routerLink]="['/calculator']" title="calculator">Calculator</button>
       </div>
     </span>
   </nav>
 
 
 
-<div>
-    <div >
+<div style="margin-top:30px; margin-left: 20px">
+    <div>
     
         <div class="alert alert-danger" style="margin-bottom:0" role="alert" *ngIf="control">
             You need to enter 10 players name

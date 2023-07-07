@@ -1,0 +1,104 @@
+input.ng-invalid.ng-touched
+{  
+   border-color: red;  
+}
+
+.section-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Raleway';
+    /*text-align: center;*/
+    color: #333333;
+}
+.format-icon{
+    color: #333333;
+}
+.format-link-download{
+    font-size: 16px;
+    font-family: 'Raleway';
+    padding-left: 15px; 
+}
+.format-link-download a{
+    color: #00ACEC;
+    text-decoration: nome;
+}
+.format-button-area{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.format-button-area button{
+    float: right;
+    margin: 5px;
+}
+
+
+.staticInfo{
+    /*border: 1px black solid;*/
+    background-color: #f1f1f2;
+    color: #666666;
+    /*margin-bottom: 50px;*/
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.staticInfo_Text{
+    padding: 10px;
+}
+
+.staticInfo_Name{
+    font-size: 25px;
+  font-family: 'Raleway';
+  padding: 5px 0;
+}
+
+.staticInfo_Email{
+    font-size: 17px;
+  font-family: 'Raleway';
+  padding: 5px 0;
+}
+
+.form-group.required .col-form-label::before {
+    font-family: 'FontAwesome';
+    font-weight: bold;
+    font-size: 20px;
+    content: "*";
+    color:red;
+  }
+
+  .col-form-label::before {
+    font-family: 'FontAwesome';
+    font-weight: bold;
+    font-size: 20px;
+    content: "*";
+    color:red;
+  }
+  
+  .form-check-inputRequired::before {
+    font-family: 'FontAwesome';
+    font-weight: bold;
+    font-size: 20px;
+    content: "*";
+    color:red;
+  }
+  
+  .form-group.required .col-form-label1 {
+    margin-top: 10px;
+}
+
+.col-form-label1 {
+    margin-top: 10px;
+}
+.alert {margin-top: 8px;}
+
+.btn.disabled, .btn:disabled {
+    opacity: .30;
+  }
+
+  .search-box{
+    background-color: #F1F1F2;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }

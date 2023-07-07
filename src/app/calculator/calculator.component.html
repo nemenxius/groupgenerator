@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+
+    <span class="form-line">
+        <div class="btn-box">
+            <button type="button" class="btn btn-light" style="margin-left: 15px;" [routerLink]="['/groupgenerator']"
+                title="group">Groups Generator</button>
+            <button type="button" class="btn btn-light" style="margin-left: 15px;" [routerLink]="['/calculator']"
+                title="calculator">Calculator</button>
+        </div>
+    </span>
+</nav>
+<div style="margin-top:30px; margin-left: 20px; max-width: 600px;">
+
+    Quanto é <input id="value1" [(ngModel)] = "value1" style="width:10.3%" placeholder="%"> de <input id="value2" [(ngModel)] = "value2" style="width:10.3%"> ?   
+
+                <div class="input-group mb-3" style="margin-top:10px">
+                    <span class="input-group-text" id="basic-addon1"><button type="button" class="btn btn-light btn-sm" style="margin-left: 15px;" (click)="calculateOne(value1, value2)"
+                        title="calculate">Calculate</button></span>
+                    <label type="text" class="form-control" aria-label="result" aria-describedby="basic-addon1">{{resultone}}</label>
+                  </div>
+    <br>
+    O Valor <input id="value3" [(ngModel)] = "value3" style="width:10.3%"> é que percentagem de <input id="value4" [(ngModel)] = "value4" style="width:10.3%"> ?
+     
+        <div class="input-group mb-3" style="margin-top:10px">
+            <span class="input-group-text" id="basic-addon1"><button type="button" class="btn btn-light btn-sm" style="margin-left: 15px;" (click)="calculateTwo(value3, value4)"
+                title="calculate">Calculate</button></span>
+            <label type="text" class="form-control" aria-label="result" aria-describedby="basic-addon1">{{resulttwo}}</label>
+          </div>
+
+</div>

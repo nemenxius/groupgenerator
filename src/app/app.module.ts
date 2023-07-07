@@ -7,11 +7,13 @@ import { GroupGeneratorComponent } from './group-generator/group-generator.compo
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroupGeneratorComponent
+    GroupGeneratorComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
